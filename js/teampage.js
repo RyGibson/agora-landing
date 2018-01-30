@@ -13,7 +13,7 @@ const persons = [
   },
   {
     name: "Ryan Gibson",
-    photo: "images/ryan-headshot.png",
+    photo: "images/ryan-headshot.PNG",
     title: "Co-Founder and Head Canadian",
     bio:
       "<p>Ryan Gibson's Bio</p>",
