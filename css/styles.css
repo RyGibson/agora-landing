@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Hind', sans-serif;
 }
 
 /* Add a white background color to the top navigation */
@@ -29,4 +29,40 @@
 .topnav a.active {
     background-color: #e7bb69;
     color: white;
+}
+
+.agora-title {
+    font-family: 'Hind', sans-serif;
+}
+
+.background-img {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.whitepaper-button {
+    /* button */
+    background-color: #fff;
+    border-width: 3px;
+    border-color: #e7bb69;
+    /* positioning */
+    position: absolute;
+    z-index: 1;
+    height: 7%;
+    width: 25%;
+    top: calc(61%);
+    left: calc(37.5%);
+    /* fonts */
+    font-size: 1.8vw;
+    border-radius: 5px;
+    color: #000;
 }
