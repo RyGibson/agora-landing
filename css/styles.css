@@ -59,8 +59,8 @@ img {
     z-index: 1;
     height: 7%;
     width: 25%;
-    top: calc(61%);
-    left: calc(37.5%);
+    top: 40%;
+    left: 37.5%;
     /* fonts */
     font-size: 1.8vw;
     border-radius: 5px;
