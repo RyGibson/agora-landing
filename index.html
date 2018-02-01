@@ -5,8 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Agora Systems</title>
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/teamstyles.css">
         <link rel="stylesheet" href="css/mediaqueries.css">
         <link href="https://fonts.googleapis.com/css?family=Hind:400,500,600,700" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/vue-resource/1.2.1/vue-resource.min.js"></script>
     </head>
     <body>
         <div class="topnav">
@@ -15,10 +18,55 @@
         </div>
         <h1 class="agora-title">AGORA</h1>
         <div class="background-img">
-            <button class="whitepaper-button">READ OUR WHITE PAPER</button>
-            <button class="team-button" type="button" href="team.html">OUR TEAM</button>
+            <a href="whitepaper.html">
+                <button class="whitepaper-button">READ OUR WHITE PAPER</button>
+            </a>
+            <!-- <button class="team-button" type="button" href="team.html">OUR TEAM</button> -->
             <img class="img1" src="images/agora-splash-2000.png">
             <img class="img2" src="images/agora-splash-nologo-2000.png">
         </div>
+        <!-- Splash Graphics End -->
+        
+        <!-- Team Stuff Begin -->
+        <div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app">
+            <div class="team-container">
+              <div class="header">
+                <h2 class="header-title">Our Team</h2>
+              </div>
+              <div class="person-list">
+                <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)"><img class="person-img" :src="person.photo">
+                  <div class="person-details">
+                    <h2 class="person-title">{{person.name}}</h2>
+                    <p class="person-desc">{{person.title}}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-detail">
+              <div class="team-detail-inner" v-if="isOk">
+                <div class="team-detail-left" :style=`background-image:url(${selectedPersonData.photo})`>
+                  <div class="team-detail-photo"><img :src="selectedPersonData.photo" alt="">
+                  </div>
+                </div>
+                <div class="team-detail-right">
+                  <div class="team-detail-bio">
+                    <div class="team-detail-header">
+                      <h2 class="person-title">{{selectedPersonData.name}}</h2>
+                      <p class="person-desc">{{selectedPersonData.title}}</p>
+                      <div class="social">
+                        <a :href="selectedPersonData.social.facebook" target="_blank" class="ion-social-facebook"></a>
+                        <a :href="selectedPersonData.social.twitter" target="_blank" class="ion-social-twitter"></a>
+                        <a href="selectedPersonData.social.linkedin" target="_blank" class="ion-social-linkedin"></a>
+                      </div>
+                    </div>
+                    <div class="team-detail-bio-content" v-html="selectedPersonData.bio">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
     </body>
+    <script src="js/teampage.js"></script>
 </html>
