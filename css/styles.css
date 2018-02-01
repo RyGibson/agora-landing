@@ -7,6 +7,7 @@
 .topnav {
     background-color: #FFFFFF;
     overflow: hidden;
+    display: none;
 }
 
 /* Style the links inside the navigation bar */
@@ -32,7 +33,7 @@
 }
 
 .agora-title {
-    font-family: 'Hind', sans-serif;
+    display: none;
 }
 
 .background-img {
@@ -42,27 +43,62 @@
     z-index: 0;
     overflow: hidden;
     margin: 0;
+    margin-top: 120px;
   }
 
-img {
+.img1 {
     max-height: 100%;
     max-width: 100%;
 }
 
+.img2 {
+    display: none;
+}
+
 .whitepaper-button {
-    /* button */
-    background-color: #fff;
-    border-width: 3px;
-    border-color: #e7bb69;
-    /* positioning */
+    background: #FFFFFF;
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.14);
+    font-family: Hind;
+    font-weight: 500;
     position: absolute;
     z-index: 1;
     height: 7%;
-    width: 25%;
-    top: 40%;
-    left: 37.5%;
-    /* fonts */
+    width: 29%;
+    top: 43%;
+    left: 35.5%;
     font-size: 1.8vw;
-    border-radius: 5px;
-    color: #000;
+    border-style: none;
+    border-image: none;
+    border-color: transparent;
+    border-width: 0px;
+    color: #3c4a5e;
+    border: 1px solid #2532460a;
+}
+
+.whitepaper-button:focus {
+    outline: none;
+}
+
+.team-button {
+    background: #253246;
+    border: 1px solid rgba(35, 47, 64, 0.01);
+    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.14);
+    font-family: Hind;
+    font-weight: 500;
+    position: absolute;
+    z-index: 1;
+    height: 7%;
+    width: 29%;
+    top: 51%;
+    left: 35.5%;
+    font-size: 1.8vw;
+    border-style: none;
+    border-image: none;
+    border-color: transparent;
+    border-width: 0px;
+    color: #FFFFFF;
+}
+
+.team-button:focus {
+    outline: none;
 }

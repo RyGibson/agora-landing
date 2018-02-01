@@ -1,5 +1,51 @@
-@media screen and (min-width: 550px){
+@media screen and (max-width: 550px){
     .agora-title{
+        font-family: 'Hind';
+        font-weight: bold;
+        font-size: 64px;
+        letter-spacing: 6px;
+        color: #D5A652;
+        display: block;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 0;
+        line-height: 68px;
+    }
+
+    .background-img{
+        margin-top: 10px;
+    }
+
+    .background-img .img1{
         display: none;
+    }
+    .background-img .img2{
+        max-height: 100%;
+        max-width: 100%;
+        display: block;
+    }
+    .whitepaper-button {
+        letter-spacing: 1.12px;
+        font-size: 12px;
+        left: auto;
+        top: auto;
+        width: 75%;
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .team-button{
+        letter-spacing: 1.12px;
+        font-size: 12px;
+        left: auto;
+        top: auto;
+        width: 75%;
+        height: 45px;
+        display: block;
+        margin: 0 auto;
+        position: relative;
+        margin-bottom: 10px;
     }
 }

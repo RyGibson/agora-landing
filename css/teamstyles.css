@@ -90,10 +90,12 @@ body {
   }
   .person-img {
     width: 100%;
+    border-radius: 50%;
   }
   .person-title {
     color: #333;
     font-size: 2em;
+    text-align: center;
   }
   .person-desc {
     color: #333;
@@ -101,6 +103,7 @@ body {
     text-transform: uppercase;
     font-size: 0.8em;
     letter-spacing: 2px;
+    text-align: center;
   }
   .person-list {
     display: flex;
@@ -179,6 +182,7 @@ body {
     margin-bottom: 15px;
     line-height: 25px;
     font-size: 1.05em;
+    color: #000;
   }
   .team-detail-header {
     margin-bottom: 30px;
