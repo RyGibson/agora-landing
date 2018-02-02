@@ -12,8 +12,7 @@
     </head>
     <body>
         <div class="topnav" id="myTopnav">
-            <a href="index.html">Agora</a>
-            <a class="active" href="team.html">Team</a>
+            <a href="index.html">&nbsp;</a>
         </div>
 
         <div :class="['container', isSelected ? 'container-selected':'', isReady ? 'container-ready':'']" id="app">
@@ -22,7 +21,7 @@
                 <h2 class="header-title">Our Team</h2>
               </div>
               <div class="person-list">
-                <div class="person" v-for="(person,index) in persons" @click="selectPerson(index,$event)"><img class="person-img" :src="person.photo">
+                <div class="person person-position" v-for="(person,index) in persons" @click="selectPerson(index,$event)"><img class="person-img" :src="person.photo">
                   <div class="person-details">
                     <h2 class="person-title">{{person.name}}</h2>
                     <p class="person-desc">{{person.title}}</p>

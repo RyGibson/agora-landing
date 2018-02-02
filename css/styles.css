@@ -3,6 +3,10 @@
     font-family: 'Hind', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
 /* Add a white background color to the top navigation */
 .topnav {
     background-color: #FFFFFF;
@@ -39,66 +43,87 @@
 .background-img {
     width: 100%;
     position: relative;
-    display: inline-block;
+    display: block;
     z-index: 0;
     overflow: hidden;
     margin: 0;
-    margin-top: 120px;
+    margin-top: 100px;
+    background: transparent url('../images/agora-splash-2000.png') center center no-repeat;
+    height: 1000px;
+    background-size: contain;
   }
 
 .img1 {
     max-height: 100%;
-    max-width: 100%;
+    max-width: 2000px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
 }
 
 .img2 {
     display: none;
 }
 
-.whitepaper-button {
+.whitepaper-button, .team-button {
     background: #FFFFFF;
     box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.14);
     font-family: Hind;
     font-weight: 500;
-    position: absolute;
+    position: relative;
     z-index: 1;
-    height: 7%;
-    width: 29%;
-    top: 43%;
-    left: 35.5%;
-    font-size: 1.8vw;
+    height: 64px;
+    width: 300px;
+    font-size: 16px;
+    letter-spacing: 0.8px;
     border-style: none;
     border-image: none;
     border-color: transparent;
     border-width: 0px;
     color: #3c4a5e;
     border: 1px solid #2532460a;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 470px;
+    display: block;
 }
 
-.whitepaper-button:focus {
+.whitepaper-button:focus, .team-button:focus {
     outline: none;
 }
 
-.team-button {
+.team-button{
     background: #253246;
-    border: 1px solid rgba(35, 47, 64, 0.01);
-    box-shadow: 2px 2px 3px 0 rgba(0,0,0,0.14);
-    font-family: Hind;
-    font-weight: 500;
+    color: #FFFFFF;
+    margin-top: 10px;
+}
+
+.tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #253246;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 5px 10px;
     position: absolute;
     z-index: 1;
-    height: 7%;
-    width: 29%;
-    top: 51%;
-    left: 35.5%;
-    font-size: 1.8vw;
-    border-style: none;
-    border-image: none;
-    border-color: transparent;
-    border-width: 0px;
-    color: #FFFFFF;
+    bottom: 120%;
+    left: 50%;
+    margin-left: -60px;
+}
+.tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #253246 transparent transparent transparent;
 }
 
-.team-button:focus {
-    outline: none;
+.whitepaper-button:hover .tooltiptext {
+    visibility: visible;
 }
+

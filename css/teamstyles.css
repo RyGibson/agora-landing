@@ -1,3 +1,6 @@
+*{
+  font-family: "Hind", sans-serif;
+}
 .topnav{
     float: left;
     color: #333;
@@ -19,12 +22,13 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #333;
-    color: white;
+    background: transparent url('../images/caret.svg') center left no-repeat;
+    background-size: 30px 30px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
 /* Add a color to the active/current link */
@@ -35,7 +39,7 @@
 
 body {
     height: 100%;
-    font-family: "Karla", sans-serif;
+    font-family: "Hind", sans-serif;
     background-color: #fff;
     /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%232f2f2f' fill-opacity='0.4'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
   }
@@ -58,10 +62,12 @@ body {
   }
 .header-title {
     width: 100%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 3.3em;
-    color: #333;
+    font-family: 'hind', sans-serif;
+    color: #253246;
     margin-bottom: 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
   
   .team-container {
@@ -70,17 +76,23 @@ body {
     max-width: 1400px;
     width: 100%;
     margin: auto;
+    margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     height: auto;
   }
   
   .person {
-    width: calc(45% - 30px);
+    width: 40%;
     cursor: pointer;
     overflow: hidden;
     transition: 0.45s;
     position: relative;
+    display: inline-block;
+    
+  }
+  .person-position{
+    margin: 0 5%;
   }
   .person-details {
     padding: 0 20px;
@@ -106,9 +118,11 @@ body {
     text-align: center;
   }
   .person-list {
-    display: flex;
+    /*display: flex;*/
     flex-wrap: wrap;
-    width: 100%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
     justify-content: space-between;
   }
   /* .person-list:hover .person {
@@ -122,14 +136,16 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #fbf9bd;
+    background: #e7bb69; 
     content: "";
     height: 0px;
     transition: 0.45s;
+
   }
   .person:after {
-    content: "\f2ca";
-    font-family: "Ionicons";
+    content: "";
+    background: #e7bb69 url('../images/caret.svg') center center no-repeat; 
+    background-size: 18px;
     font-size: 36px;
     color: #282828;
     position: absolute;
@@ -157,6 +173,7 @@ body {
   }
   .container-selected .person-list .person-selected {
     opacity: 1 !important;
+    margin: 0;
   }
   .container-selected .person-list .person-selected:before {
     height: 100%;

@@ -14,6 +14,7 @@
 
     .background-img{
         margin-top: 10px;
+        background: none;
     }
 
     .background-img .img1{
@@ -32,7 +33,7 @@
         width: 75%;
         height: 45px;
         display: block;
-        margin: 0 auto;
+        margin: 0 auto !important;
         position: relative;
         margin-bottom: 10px;
     }
@@ -44,8 +45,20 @@
         width: 75%;
         height: 45px;
         display: block;
-        margin: 0 auto;
+        margin: 10px auto 0px;
         position: relative;
         margin-bottom: 10px;
     }
+}
+
+@media screen and (max-width: 780px){
+    .background-img{
+        margin-top: 30px;
+        height: 770px;
+
+    }
+    .whitepaper-button{
+        margin-top: 350px;
+    }
+
 }
