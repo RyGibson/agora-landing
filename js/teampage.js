@@ -2,7 +2,7 @@ const persons = [
   {
     name: "Maria Rioumine",
     photo: "images/maria-headshot.jpg",
-    title: "Co-Founder and Chief Russian",
+    title: "Co-Founder",
     bio:
       "<p>Maria is a co-founder at Agora, where she brings many years of expertise of investing, finance and operations together.</p><p> She was formerly the Chief of Staff to Joe Lonsdale (founder of Palantir and OpenGov) and a member of the investment team at 8VC, a San Francisco based venture firm focused on transforming major industries through data-centric technologies. She is a co-founder of RCI, a stealth financial services software company.</p><p>Before joining 8VC, Maria worked at Goldman Sachs in the Investment Banking team in London where she focused on M&A and financing transactions in the consumer and healthcare industries. Maria was a part of AirAsia’s Business Development division in Indonesia and Malaysia. She also served as an advisor to a number of nonprofit organizations in Pakistan and Southeast Asia, focusing on education and women’s initiatives.</p><p> Maria graduated with a degree in Philosophy, Politics, and Economics from the University of Oxford, where she was also the President of the Oxford Union. Maria grew up in Russia and in Israel.</p>",
     social: {
@@ -14,7 +14,7 @@ const persons = [
   {
     name: "Ryan Gibson",
     photo: "images/ryan-headshot.PNG",
-    title: "Co-Founder and Head Canadian",
+    title: "Co-Founder",
     bio:
       "<p>Ryan is a co-founder at Agora, where he brings many years of engineering, management and product knowledge together.</p><p> He was formerly an engineer and program manager at Micrososft, working on the ambitious HoloLens project. Prior to Microsoft he worked on the investment team at 8VC, a San Francisco based venture firm focused on transforming major industries through data-centric technologies. He has also held various engineering positions at Google, Facebook and BlackBerry, working on projects ranging from rural internet infrastructure to advanced display technology research to new wireless technologies.</p><p> Ryan recieved his Bachelor's degree in Engineering with Distinction from the University of Waterloo. While at Waterloo, Ryan co-founded a hackathon and focused on building various projects, most notibly his work in agricultural technology, which achieved both the 'most innovative' and 'best engineering' awards at the Canadian Engineering Competition. He was born and raised in Canada.</p>",
     social: {
