@@ -83,7 +83,7 @@ body {
   }
   
   .person {
-    width: 40%;
+    width: 27%;
     cursor: pointer;
     overflow: hidden;
     transition: 0.45s;
@@ -92,7 +92,7 @@ body {
     
   }
   .person-position{
-    margin: 0 5%;
+    margin: 0 3%;
   }
   .person-details {
     padding: 0 20px;
@@ -102,7 +102,7 @@ body {
   }
   .person-img {
     width: 100%;
-    border-radius: 50%;
+    border-radius: 10%;
   }
   .person-title {
     color: #333;
@@ -120,7 +120,7 @@ body {
   .person-list {
     /*display: flex;*/
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     display: block;
     margin: 0 auto;
     justify-content: space-between;
@@ -358,7 +358,7 @@ body {
     }
   
     .person {
-      width: calc(50% - 20px);
+      width: calc(50% - 50px);
     }
   }
   @media (max-width: 480px) {
